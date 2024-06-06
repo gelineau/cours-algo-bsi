@@ -4,3 +4,4 @@ venv/
 2022-2023/
 venv3.8/
 private/
+*.pyc
