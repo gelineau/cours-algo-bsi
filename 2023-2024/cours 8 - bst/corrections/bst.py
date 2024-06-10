@@ -98,7 +98,7 @@ def display_ordered_values(bst: Tree):
 display_ordered_values(bst)
 
 
-def search_in_node(node: Node, value: int):
+def search_in_node(node: Node, value: int) -> bool:
     if value == node.value:
         return True
 
