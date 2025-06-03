@@ -111,17 +111,58 @@ class Queue:
     tail: Node | None
 
 
-def create_queue() -> Queue: ...
-def enqueue(value: int, queue: Queue): ...
-def dequeue(queue: Queue) -> int: ...
-def get_size(queue: Queue) -> int: ...
-def is_empty(queue: Queue) -> bool: ...
+def create_queue() -> Queue:
+    return Queue(head=None, tail=None)
+
+
+def enqueue(value: int, queue: Queue):
+    if is_empty(queue):
+        new_node = Node(value=value, previous=None, next=None)
+        queue.head = new_node
+        queue.tail = new_node
+    else:
+        new_node = Node(value=value, previous=queue.tail, next=None)
+        queue.tail.next = new_node
+        queue.tail = new_node
+
+
+def dequeue(queue: Queue) -> int:
+    # if only one element
+    if queue.head == queue.tail:
+        value = queue.head.value
+        queue.head = None
+        queue.tail = None
+        return value
+
+    # several elements
+    value = queue.head.value
+    queue.head = queue.head.next
+    queue.head.previous = None
+    return value
+
+
+
+
+def get_size(queue: Queue) -> int:
+    if is_empty(queue):
+        return 0
+    size = 1
+    current_node = queue.head
+    while current_node != queue.tail:
+        current_node = current_node.next
+        size += 1
+
+
+
+def is_empty(queue: Queue) -> bool:
+
+    return queue.head == None and queue.tail == None
 
 
 queue = create_queue()
 enqueue(1, queue)
-enqueue(2, queue)
+# enqueue(2, queue)
 print(dequeue(queue))
 enqueue(3, queue)
 print(dequeue(queue))
-print(dequeue(queue))
+# print(dequeue(queue))

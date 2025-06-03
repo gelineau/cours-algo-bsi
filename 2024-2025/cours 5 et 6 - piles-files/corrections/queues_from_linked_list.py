@@ -135,7 +135,8 @@ def measure_sort_operations(queue_size: int) -> float:
 
     # Measure the time for k times sort
     start_time = time.time()
-    queue.sort()
+    for _ in range(len(queue)):
+        queue.insert(0, 0)
     total_time = time.time() - start_time
 
     return total_time
@@ -149,28 +150,32 @@ queue_sizes = [
     10,
     100,
     1000,
-    10_000,
+    50_000,
     100_000,
-    1_000_000,
-    2_000_000,
-    4_000_000,
-    6_000_000,
-    8_000_000,
-    10_000_000,
+    200_000,
+    300_000,
+    # 1_000_000,
+    # 2_000_000,
+    # 4_000_000,
+    # 6_000_000,
+    # 8_000_000,
+    # 10_000_000,
 ]
 
 for queue_size in queue_sizes:
-    print(f"{queue_size=}")
-    total_time = measure_queue_operations(queue_size, repetitions)
-    print(f"Time for enqueue and dequeue: {total_time} seconds")
-    total_time = measure_dequeue_operations(queue_size, repetitions)
-    print(f"Time for enqueue and dequeue from a dequeue: {total_time} seconds")
-    total_time = measure_list_operations(queue_size, repetitions)
-    print(f"Time for enqueue and dequeue from a list: {total_time} seconds")
-    times.append(total_time)
-
+    # print(f"{queue_size=}")
+    # total_time = measure_queue_operations(queue_size, repetitions)
+    # print(f"Time for enqueue and dequeue: {total_time} seconds")
+    # times.append(total_time)
+    #
+    # total_time = measure_dequeue_operations(queue_size, repetitions)
+    # print(f"Time for enqueue and dequeue from a dequeue: {total_time} seconds")
+    # total_time = measure_list_operations(queue_size, repetitions)
+    # print(f"Time for enqueue and dequeue from a list: {total_time} seconds")
+    #
     total_time = measure_sort_operations(queue_size)
     print(f"Time for sorting: {total_time} seconds")
+    times.append(total_time)
 
 # Plotting the results
 plt.figure(figsize=(12, 6))
