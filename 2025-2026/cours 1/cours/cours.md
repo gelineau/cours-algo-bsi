@@ -1,142 +1,7 @@
 
-# Introduction à Python
+# Python
 
-
----
-<!--
-# Historique
-
-Créé en 1989 par Guido van Rossum
-
-- version 2.0 en 2000  
-  - version courante 2.7  
-  - support officiel terminé le 01/01/2020
-
-- version 3.0 en 2008 (quelques incompatibilités)  
-  - version courante 3.7  
-  - plus cohérent, "propre", meilleur support d'Unicode
-
-- recommandation : **choisir Python3** sauf si vous travaillez sur un code Python2 non encore migré
-
--->
-
-# Caractéristiques
-
-- facile à apprendre
-- structures de données de haut niveau
-- orienté objet
-- interprété
-- extensible
-- Open Source
-- disponible et portable "tel quel" sur toutes les plateformes
-- pratique plus que puriste
-- permissif
-- accent sur la lisibilité (indentation)
-- typage fort, mais non déclaré
-- puissant : coeur minimaliste, mais bibliothèque très étendue (UI, web, fichiers, bases de données, manipulation de texte...)
-
----
-
-# Popularité
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Og847HVwRSI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
----
-
-# Popularité
-
-Index [Tiobe](http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html)
-
-![Index Tiobe](tiobe.png)
-
----
-
-# Popularité
-
-Index [PyPL](https://sites.google.com/site/pydatalog/pypl/PyPL-PopularitY-of-Programming-Language)
-
-basé sur les recherches "tutorial <langage>" sur Google
-
-![PyPL](pypl.png)
-
-_"Worldwide, Java is the most popular language, Python grew the most in the last 5 years (7.6%) and PHP lost the most (-4.9%)"_
-
----
-
-# Popularité
-
-Projets créés sur Github (aout 2014)
-
-![Github](github.png)
-
----
-
-# Popularité
-
-Largement utilisé par Google (dont GvR était salarié jusqu'en 2012, puis chez DropBox), sur Youtube
-
-Mercurial est écrit en Python
-
-Web frameworks : Django, Flask
-
-Enseignement supérieur et lycée
-
-Automatisation de tests, CI, datamining, machine learning, sécurité
-
-[Success stories](http://www.python.org/about/success/)
-
----
-
-# Installation
-
-Aller sur le [site](http://python.org) et suivre les instructions
-
-Windows : penser à cocher la case pour remettre à jour le PATH
-
-L'installation crée une commande _python_ dans l'invite de commande, qui lance l'interpréteur interactif
-
-![Python installation](python.png)
-
----
-
-# Utilisation
-
-Interactif :
-
-```console
-$ python
-Python 3.6.1 (v3.6.1:69c0db5050, Mar 21 2017, 01:21:04)
-[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
-Type "help", "copyright", "credits" or "license" for more information.
->>> 2 + 2
-4
->>>
-```
-
-Non-interactif :
-
-```console
-$ python fichier.py
-...
-```
-
-Solliciter un module existant :
-
-```console
-$ python -m http.server
-Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
-```
-
----
-
-# Ressources
-
-- la documentation Python : [site Python](http://docs.python.org/3/), [tutoriel](https://docs.python.org/3/tutorial/index.html), doc Windows
-- forums : [comp.lang.python](https://groups.google.com/forum/?fromgroups#!forum/comp.lang.python), [comp.lang.python.fr](https://groups.google.com/forum/?fromgroups#!forum/fr.comp.lang.python), [reddit r/Python](http://www.reddit.com/r/Python/)
-- [stackoverflow](http://stackoverflow.com/)
-- [Python Package Index](http://pypi.python.org)
-- [The Python Cookbook](http://aspn.activestate.com/ASPN/Python/Cookbook/)
-
+Copyright Orange - tous droits réservés
 ---
 
 # Commentaires
@@ -145,8 +10,9 @@ Introduits par `#`
 
 ```python
 # ceci est le premier commentaire
-spam = 1                 # et ceci est le deuxième
-                         # ... et encore un !
+spam = 1    # et ceci est le deuxième
+            # ... et encore un !
+            
 string = "# Ceci n'est pas un commentaire."
 ```
 
@@ -155,13 +21,14 @@ string = "# Ceci n'est pas un commentaire."
 # Définition de noms
 
 ```python
->>> width = 20
->>> width += 10
->>> width
-30
->>> height = 5 * 9
+width = 20
+width += 10
+print(width)
+# 30
 
->>> a, b = 0, 1
+height = 5 * 9
+
+a, b = 0, 1
 ```
 
 ---
@@ -212,10 +79,10 @@ Usage: thingy [OPTIONS]
 ---
 
 # Chaines de caractères
+Utilisation de l'interpréteur interactif
 
 ```python
 >>> a = "C'est \"OK\""
->>> b = None
 ```
 
 Évaluation
@@ -223,8 +90,6 @@ Usage: thingy [OPTIONS]
 ```python
 >>> a
 'C\'est "OK"'
->>> b
->>>
 ```
 
 Affichage
@@ -232,9 +97,6 @@ Affichage
 ```python
 >>> print(a)
 C'est "OK"
->>> print(b)
-None
->>>
 ```
 
 ---
@@ -276,7 +138,7 @@ Concaténation par `+`, duplication par `*`
 
 # Chaines de caractères
 
-Accès à un caractère par index
+**Accès à un caractère par index**
 
 ```
  +---+---+---+---+---+
@@ -296,14 +158,13 @@ Accès à un caractère par index
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 IndexError: string index out of range
->>>
 ```
 
 ---
 
 # Chaines de caractères
 
-Tranches (slices)
+**Tranches (slices)**
 
 ```
  +---+---+---+---+---+
@@ -326,7 +187,7 @@ Le premier indice est **compris**, le deuxième est **non compris**
 
 # Chaines de caractères
 
-Tranches (slices) - autre explication
+**Tranches (slices) - autre explication**
 
 En écrivant les indices avant les cases, cela permet de calculer plus facilement les slices.
 
@@ -349,7 +210,7 @@ En écrivant les indices avant les cases, cela permet de calculer plus facilemen
 
 # Chaines de caractères
 
-Tranches (slices) - cas particuliers
+**Tranches (slices) - cas particuliers**
 
 ```
 +---+---+---+---+---+       +---+---+---+---+---+
@@ -480,19 +341,27 @@ Concaténation par `+`, duplication par `*`
 ['spam', 'eggs', 100, 'spam', 'eggs', 100, 'spam', 'eggs', 100, 'Boo!']
 ```
 
+---
+
+# Listes
+
 Affectation et clonage
 
 ```python
 >>> a = [0, 1]
->>> b = a       # les noms 'a' et 'b' sont liés au même objet
->>> b[0] = 9    # toute modification sur b modifie aussi a
->>> a
-[9, 1]
->>> c = a[:]    # clonage : création d'un objet différent de a. variante : c = a.copy()
->>> c[0] = 1
+>>> b = a       
+>>> b[0] = 9    
+>>> a  
+```
+```python
+[9, 1]  # toute modification sur b modifie aussi a
+>>> c = a.copy()    # clonage : création d'un objet différent de a
+>>> c = deepcopy(a) # en cas de liste de liste
+>>> c[0] = 10
 >>> a
 [9, 1]
 ```
+<!-- .element: class="fragment" -->
 
 ---
 
@@ -504,6 +373,21 @@ Longueur d'une liste par `len`
 >>> a = ['a', 'b', 'c', 'd']
 >>> len(a)
 4
+```
+---
+# Conversion de types
+
+`str(x)` : convertit x en chaîne de caractères  
+`int(x)` : convertit x en entier (si possible)  
+etc...  
+
+```python
+str(25) # '25'
+str([1, 2, 3]) # '[1, 2, 3]'
+int("23") # 23
+int("12A") # ValueError: invalid literal for int() with base 10: '12A'
+list("abc") # ['a', 'b', 'c']
+list(2) # TypeError: 'int' object is not iterable
 ```
 
 ---
@@ -574,35 +458,6 @@ Insertion d'un élément à une position donnée par `insert`
 
 ---
 
-# Listes
-
-`del` pour supprimer des éléments
-
-```python
->>> a = [-1, 1, 66.25, 333, 333, 1234.5]
->>> del a[0]
->>> a
-[1, 66.25, 333, 333, 1234.5]
->>> del a[2:4]
->>> a
-[1, 66.25, 1234.5]
->>> del a[:]
->>> a
-[]
-```
-
-`del` peut aussi supprimer une variable
-
-```python
->>> del a
->>> a
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'a' is not defined
-```
-
----
-
 # Tuples
 
 Comme une liste, mais immuable
@@ -629,6 +484,10 @@ C'est la virgule qui crée un tuple, pas la parenthèse
 (1, 2)
 ```
 
+---
+
+# Tuples
+
 Tuple avec un seul élément
 
 ```python
@@ -650,30 +509,29 @@ Tuple vide
 
 ---
 
-# Premiers pas en programmation
+Kahoot
+
+---
+
+# Blocs de code
 
 Puissances de 3:
 
 ```python
->>> a = 3
->>> while a < 100:
-...     print(a)
-...     a *= 3
-... print('fini')
-...
+a = 3
+while a < 100:
+    print(a)
+    a *= 3
+print('fini')
+```
+
+```
 3
 9
 27
 81
 fini
 ```
-
-À noter :
-
-- instruction de boucle (`while ...:`)
-- bloc de code, avec indentation
-  - Préférer 4 espaces
-- fin du bloc, dés-indentation
 
 ---
 
@@ -715,38 +573,26 @@ print("Timed out!")
 
 ---
 
-# La fonction `print`
-
-```python
->>> i = 256 * 256
->>> print('La valeur de i est', i)
-La valeur de i est 65536
-```
-
----
-
 # Conditions : `if, elif, else`
 
 ```python
->>> x = int(input("Please enter an integer: "))
-Please enter an integer: 42
->>> if x < 0:
-...      x = 0
-...      print('Negative changed to zero')
-... elif x == 0:
-...      print('Zero')
-... elif x == 1:
-...      print('Single')
-... else:
-...      print('More')
-...
-More
+x = int(input("Please enter an integer: ")) 
+
+if x < 0:
+    x = 0
+    print('Negative changed to zero')
+elif x == 0:
+    print('Zero')
+elif x == 1:
+    print('Single')
+else:
+    print('More')
 ```
 
 À noter :
 
 - pas de "switch / case"
-- `match` en Python 3.10+ pour les non-débutants
+- `match` en Python 3.10+
 
 ---
 
@@ -796,14 +642,11 @@ Test d'identité : `is`
 
 ```python
 >>> a = [1, 2]
->>> b = a[:]
+>>> b = a.copy()
 >>> a == b # tous les éléments de chaque liste sont-ils égaux ?
 True
 >>> a is b # est-ce le même objet ?
 False
->>> c = a
->>> a is c
-True
 ```
 
 Principalement utilisé pour comparer une variable avec `None`
@@ -820,10 +663,12 @@ if a is None:
 Un des outils les plus puissants de Python
 
 ```python
->>> animals = ['chat', 'chien', 'oiseau']
->>> for animal in animals:
-...     print(animal, len(animal))
-...
+animals = ['chat', 'chien', 'oiseau']
+for animal in animals:
+    print(animal, len(animal))
+```
+
+```
 chat 4
 chien 5
 oiseau 6
@@ -838,9 +683,11 @@ L'itération par `for ... in` permet de manipuler des *valeurs* plutôt que des 
 Itération sur une chaine de caractères:
 
 ```python
->>> for car in 'abcdef':
-...     print(car)
-...
+for car in 'abcdef':
+    print(car)
+```
+
+```
 a
 b
 c
@@ -854,9 +701,11 @@ f
 # La fonction `range`
 
 ```python
->>> for i in range(5):
-...     print(i)
-...
+for i in range(5):
+    print(i)
+```
+
+```
 0
 1
 2
@@ -866,74 +715,152 @@ f
 
 syntaxe : `range(start, stop, step)` ou `range(start, stop)` ou `range(stop)`
 
+
 ---
 
-# Itérables
 
+# 3 façons d'itérer sur une liste
+
+Itérer sur les valeurs (si je n'ai pas besoin de l'index)
 ```python
->>> range(5)
-range(0, 5)
+animals = ['chat', 'chien', 'oiseau']
+for animal in animals:
+    print(animal)
+```
+Itérer sur les index (si j'ai besoin de l'index)
+```python
+animals = ['chat', 'chien', 'oiseau']
+for index in range(len(animals)):
+    print(index, animals[index])
 ```
 
-> `range` renvoie un _itérable_ (un objet dont on peut parcourir les éléments un par un).
+Itérer sur les 2 : (cf slide plus loin)
+```python
+animals = ['chat', 'chien', 'oiseau']
+for index, animal in enumerate(animals):
+    print(index, animal)
+```
+---
 
-> Dans `for x in A`, `A` est un itérable.
+Exercices 1 à 8  
+Et 12 et 13 en bonus pour les plus rapides
 
-> Certaines fonctions prennent un itérable comme argument, par exemple `list`.
+---
+
+# List comprehensions
+
+Création par _list comprehensions_
 
 ```python
->>> list(range(5))
-[0, 1, 2, 3, 4]
+print([x for x in range(5)])
+# [0, 1, 2, 3, 4]
+print([x * 2 for x in range(5)])
+# [0, 2, 4, 6, 8]
+print([x * 2 for x in range(5) if x != 3])
+# [0, 2, 4, 8]
 ```
+Eviter les list comprehensions imbriquées ou trop compliquées. 
+
+---
+
+# Itérations
+
+Pour affecter plusieurs variables à la fois
+
+```python
+a, b, c = x
+```
+
+itère sur x et affecte les valeurs
+
+```python
+title, first_name, name = "Mme Ada Lovelace".split()
+print(first_name) # Ada
+
+a, b, c = range(3)
+print(c) # 2
+```
+
+Il faut le même nombre de valeurs des deux côtés !
+
+---
+# Itérations
+
+`zip` pour itérer sur plusieurs séquences à la fois
+
+```python
+questions = ['name', 'quest', 'favorite color']
+answers = ['lancelot', 'the holy grail', 'blue']
+for question, answer in zip(questions, answers):
+    print('What is your ' + question + '?  It is ' + answer)
+```
+
+``` text
+What is your name?  It is lancelot.
+What is your quest?  It is the holy grail.
+What is your favorite color?  It is blue.
+```
+
+---
+
+# Itérations
+
+`enumerate` pour itérer sur le tuple (rang, valeur)
+
+```python
+cities = ['bordeaux', 'rennes']
+for index, city in enumerate(cities):
+    print(index, city)
+```
+
+``` text
+0 bordeaux
+1 rennes
+```
+
+
 
 ---
 
 # `continue`
 
 ```python
->>> vowels = 'aeiouy'
->>> consonants = ''
->>> for character in 'une souris verte':
-...     if character in vowels or character == ' ':
-...         continue
-...     consonants += character
-...
->>> consonants
-'nsrsvrt'
->>>
+vowels = 'aeiouy'
+consonants = ''
+for character in 'une souris verte':
+    if character in vowels or character == ' ':
+        continue
+    consonants += character
 ```
 
+`consonants == 'nsrsvrt'`
 ---
 
 # `break`
 
 ```python
->>> while True:
-...     number = int(input('Entrer un nombre de 0 à 5: '))
-...     if 0 <= number <= 5:
-...         break
-...
-Entrer un nombre de 0 à 5: 8
-Entrer un nombre de 0 à 5: 3
->>>
+while True:
+    number = int(input('Entrer un nombre de 0 à 5: '))
+    if 0 <= number <= 5:
+        break
 ```
+
 
 ---
 
 # Fonctions
 
 ```python
->>> def three_powers(n):
-...     """Print powers of 3 until n."""
-...     a = 3
-...     while a < n:
-...         print(a, end=' ')
-...         a *= 3
-...     print()
-...
->>> three_powers(10_000)
-3 9 27 81 243 729 2187 6561
->>>
+def three_powers(n: int):
+    """Print powers of 3 until n."""
+    a = 3
+    while a < n:
+        print(a, end=' ')
+        a *= 3
+    print()
+
+three_powers(10_000)
+# 3 9 27 81 243 729 2187 6561
 ```
 
 ---
@@ -943,28 +870,42 @@ Entrer un nombre de 0 à 5: 3
 Par défaut, une fonction renvoie `None`
 
 ```python
->>> three_powers(0)
->>> print(three_powers(0))
-None
+print(three_powers(0))  # Affiche None
 ```
+
+---
+
+# Fonctions
 
 `return` pour définir une ou plusieurs valeur(s) de retour
 
 ```python
->>> def three_powers2(n):
-...     """Return power of 3 sequence until n."""
-...     result = []
-...     a = 3
-...     while a < n:
-...         result.append(a)
-...         a *= 3
-...     return result
-...
->>> p10000 = three_powers(10_000)
->>> p10000
-[3, 9, 27, 81, 243, 729, 2187, 6561]
+def three_powers2(n: int) -> list[int]:
+    """Return power of 3 sequence until n."""
+    result = []
+    a = 3
+    while a < n:
+        result.append(a)
+        a *= 3
+    return result
+
+p10000 = three_powers2(10_000)
+print(p10000)
+# [3, 9, 27, 81, 243, 729, 2187, 6561]
 ```
 
+---
+
+# Fonctions - typage statique
+
+```python
+def extract_word(sentence: str, i: int) -> str:
+    """Extract i-th word from sentence, starting at 0"""
+    return sentence.split()[i]
+```
+Le typage statique est optionnel, mais il est utile :
+- documentation
+- détection de bugs par l'IDE ou un outil d'analyse de code (*mypy*)
 ---
 
 # Fonctions
@@ -972,84 +913,49 @@ None
 Définition de paramètres par défaut
 
 ```python
->>> def add(x, y=4):
-...    return x + y
-...
->>> add(2)
-6
->>> add(2, 3)
-5
+def add(x: int, y: int = 4) -> int:
+    return x + y
+
+print(add(2))      # 6
+print(add(2, 3))   # 5
 ```
+
 
 ---
 
 # Fonctions
 
-Le paramètre par défaut est calculé _une fois pour toutes_ au moment de la définition de la fonction:
+Le paramètre par défaut est calculé _une fois pour toutes_ au moment de la définition de la fonction
 
 ```python
->>> i = 5
->>> def f(arg=i):
-...     print(arg)
-...
->>> i = 6
->>> f()
-5
+def add_to_list(number: int, numbers: list[int]=[]) -> list[int]:
+   numbers.append(number)
+   return numbers
+
+print(add_to_list(1)) # [1]
+print(add_to_list(2)) # [1, 2]
 ```
-
----
-
-# Fonctions
-
-Le paramètre n'est évalué qu'une seule fois
-
-```python
->>> def f(a, L=[]):
-...    L.append(a)
-...    return L
-...
->>> f(1)
-[1]
->>> f(2)
-[1, 2]
-```
-
-Pour éviter ce comportement :
-
-```python
->>> def f(a, L=None):
-...    if L is None:
-...        L = []
-...    L.append(a)
-...    return L
->>> f(1)
-[1]
->>> f(2)
-[2]
-```
+Par précaution, ne pas utiliser d'objet mutable ([], {}, ...) comme valeur par défaut d'une fonction 
 
 ---
 
 # Fonctions
 
 ```python
->>> def substract(x, y):
-...     return x - y
-...
+def substract(x: int, y: int) -> int:
+    return x - y
 ```
 
 On peut appeler une fonction avec des _arguments positionnels_:
 
 ```python
->>> substract(1, 2)
--1
+print(substract(1, 2)) # -1
 ```
 
 ou des _mots-clés_:
 
 ```python
->>> substract(y=6, x=2)
--4
+print(substract(y=6, x=2) # -4
 ```
 
 ---
@@ -1059,13 +965,11 @@ ou des _mots-clés_:
 On ne peut pas donner deux fois le même argument:
 
 ```python
->>> def substract(x, y):
-...     return x - y
-...
->>> substract(3, x=8)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: substract() got multiple values for argument 'x'
+def substract(x: int, y: int) -> int:
+    return x - y
+
+print(substract(3, x=8))
+# TypeError: substract() got multiple values for argument 'x'
 ```
 
 ---
@@ -1092,18 +996,7 @@ Une fonction peut accepter un nombre variable d'arguments positionnels ou mots-c
 {'u':0, 'v':'a'}
 ```
 
----
 
-# Fonctions - typage statique
-
-```python
->>> def extract_word(sentence: str, i: int) -> str:
-...     """Extract i-th word from sentence, starting at 0"""
-...     return sentence.split()[i]
-```
-
-- documentation
-- détection de bugs par l'IDE ou un outil d'analyse de code (*mypy*)
 
 ---
 
@@ -1128,43 +1021,11 @@ ou par "déballage de dictionnaire" _(dict unpacking)_
 8
 ```
 
----
 
-# Listes - List comprehensions
-
-Création par _list comprehensions_
-
-```python
->>> [x for x in range(5)]
-[0, 1, 2, 3, 4]
->>> [x * 2 for x in range(5)]
-[0, 2, 4, 6, 8]
->>> [x * 2 for x in range(5) if x != 3]
-[0, 2, 4, 8]
-```
 
 ---
 
-# Listes - List comprehensions imbriquées
-
-Non :
-
-```python
->>> matrix = [
-...     [1, 2, 3, 4],
-...     [5, 6, 7, 8],
-...     [9, 10, 11, 12],
-... ]
-...
->>> [[row[i] for row in matrix] for i in range(4)]
-[[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
-```
-
-Oui :
-
-```python
->>> failing_ips = [extract_ip(line) for line in logfile if 'ERROR' in line]
-```
+TODO: reste du document à adapter pour le cours de BSI
 
 ---
 
@@ -1183,6 +1044,11 @@ False
 ```
 
 Limitation sur les types de données qu'on peut mettre dans un set : nombres, chaines, mais pas listes ou autres sets.
+
+---
+
+# Ensembles (set)
+
 
 Création par _set comprehensions_
 
@@ -1319,72 +1185,8 @@ ou par _dict comprehensions_
 
 # Dictionnaires
 
-Depuis Python 3.6, les dictionnaires sont ordonnés.
+Depuis Python 3.6, les dictionnaires sont ordonnés
 
----
-
-# Itérations
-
-Pour affecter plusieurs variables à la fois
-
-```python
->>> a, b, c = x
-```
-
-itère sur x et affecte les valeurs
-
-```python
->>> title, first_name, name = "Mme Ada Lovelace".split()
->>> first_name
-Ada
->>> a, b, c = range(3)
->>> c
-2
-```
-
-Il faut le même nombre de valeurs des deux côtés !
-
----
-
-# Itérations
-
-`enumerate` pour itérer sur le tuple (rang, valeur)
-
-```python
->>> cities = ['bordeaux', 'rennes']
->>> for i, city in enumerate(cities):
-...     print(i, city)
-...
-0 bordeaux
-1 rennes
-```
-
-plus "pythonique" que :
-
-```python
->>> for i in range(len(cities)):   # ouh le débutant !
-...     print(i, cities[i])
-...
-0 bordeaux
-1 rennes
-```
-
----
-
-# Itérations
-
-`zip` pour itérer sur plusieurs séquences à la fois
-
-```python
->>> questions = ['name', 'quest', 'favorite color']
->>> answers = ['lancelot', 'the holy grail', 'blue']
->>> for q, a in zip(questions, answers):
-...     print('What is your ' + q + '?  It is ' + a)
-...
-What is your name?  It is lancelot.
-What is your quest?  It is the holy grail.
-What is your favorite color?  It is blue.
-```
 
 ---
 
@@ -2908,30 +2710,3 @@ Le package est ensuite disponible dans l'interpréteur :
 >>> from flask import Flask
 ```
 
----
-
-# Cheat Sheets
-
-Sur le langage (imprimable)
-
-- débutant : [https://groklearning-cdn.com/resources/cheatsheet-python-1.pdf]()
-- Intermédiaire : [https://computersciencewiki.org/images/4/48/Python3_reference_cheat_sheet.pdf]()
-- Très complète :
-    - FR : [https://perso.limsi.fr/pointal/_media/python:cours:mementopython3.pdf]()
-    - EN : [https://perso.limsi.fr/pointal/_media/python:cours:mementopython3-english.pdf]()
-
-Sur le langage (en ligne, encore plus complète)
-
-- [https://gto76.github.io/python-cheatsheet/]()
-
-Sur les expressions régulières
-
-- [https://www.dataquest.io/blog/large_files/python-regular-expressions-cheat-sheet.pdf]()
-
----
-
-# Documentation
-
-Le tutoriel officiel (EN) : [http://docs.python.org/3.6/tutorial/index.html]()
-
-OpenClassRoom (FR) : [https://openclassrooms.com/courses/apprenez-a-programmer-en-python]()
