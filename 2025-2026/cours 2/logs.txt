@@ -1,0 +1,564 @@
+
+REQUEST #1
+POST /sysbus/NMC:getWANStatus HTTP/1.1
+Host: 192.168.1.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0
+Accept: text/javascript, text/html, application/xml, text/xml, */*
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+X-Prototype-Version: 1.7
+Content-Type: application/x-sah-ws-4-call+json; charset=UTF-8
+X-Context: NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL
+X-Sah-Request-Type: idle
+Referer: http://192.168.1.1/configAccessScheduling.html?78%3AA8%3A73%3A29%3A27%3A15
+Content-Length: 0
+Cookie: UILang=fr; 73e1830a/accept-language=fr,fr-FR; 73e1830a/zoom-accessibility=small; 73e1830a/contrast-accessibility=contrast1; 73e1830a/language=fr; 73e1830a/possibleLanguages=en,fr; 73e1830a/expirydate=Mon Apr 04 2016 14:16:29 GMT+0200; 73e1830a/sessid=TNwCIDDf28hpM3tY3Vxh3dZW; 73e1830a/context=oemhGH45j2m4Z0PBCelYdeusPSDUuLwIOGNidHcmwmeljTNMXWyZ1ShDyIlShHpV; 73e1830a/login=admin; 743bf390/accept-language=fr,fr-FR; 743bf390/sessid=AFqt5GRiNgpnAKcqeu3HmMqd; 25200fcf/accept-language=fr,fr-FR; 25200fcf/zoom-accessibility=small; 25200fcf/contrast-accessibility=contrast1; 25200fcf/language=fr; 25200fcf/possibleLanguages=en,fr; 25200fcf/expirydate=Mon Apr 04 2016 15:06:04 GMT+0200; 25200fcf/sessid=xTspBARnRNFjtYKEZPR1jxl1; 25200fcf/context=NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL; 25200fcf/login=admin
+Connection: keep-alive
+
+
+REQUEST #2
+POST /sysbus/Devices/Device/78:A8:73:29:27:15:get HTTP/1.1
+Host: 192.168.1.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0
+Accept: text/javascript
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+X-Prototype-Version: 1.7
+Content-Type: application/x-sah-ws-1-call+json; charset=UTF-8
+X-Context: NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL
+Referer: http://192.168.1.1/configAccessScheduling.html?78%3AA8%3A73%3A29%3A27%3A15
+Content-Length: 17
+Cookie: UILang=fr; 73e1830a/accept-language=fr,fr-FR; 73e1830a/zoom-accessibility=small; 73e1830a/contrast-accessibility=contrast1; 73e1830a/language=fr; 73e1830a/possibleLanguages=en,fr; 73e1830a/expirydate=Mon Apr 04 2016 14:16:29 GMT+0200; 73e1830a/sessid=TNwCIDDf28hpM3tY3Vxh3dZW; 73e1830a/context=oemhGH45j2m4Z0PBCelYdeusPSDUuLwIOGNidHcmwmeljTNMXWyZ1ShDyIlShHpV; 73e1830a/login=admin; 743bf390/accept-language=fr,fr-FR; 743bf390/sessid=AFqt5GRiNgpnAKcqeu3HmMqd; 25200fcf/accept-language=fr,fr-FR; 25200fcf/zoom-accessibility=small; 25200fcf/contrast-accessibility=contrast1; 25200fcf/language=fr; 25200fcf/possibleLanguages=en,fr; 25200fcf/expirydate=Mon Apr 04 2016 15:07:10 GMT+0200; 25200fcf/sessid=xTspBARnRNFjtYKEZPR1jxl1; 25200fcf/context=NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL; 25200fcf/login=admin
+Connection: keep-alive
+
+{"parameters":{}}
+REQUEST #3
+POST /sysbus/Scheduler:getSchedule HTTP/1.1
+Host: 192.168.1.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0
+Accept: text/javascript
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+X-Prototype-Version: 1.7
+Content-Type: application/x-sah-ws-1-call+json; charset=UTF-8
+X-Context: NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL
+Referer: http://192.168.1.1/configAccessScheduling.html?78%3AA8%3A73%3A29%3A27%3A15
+Content-Length: 54
+Cookie: UILang=fr; 73e1830a/accept-language=fr,fr-FR; 73e1830a/zoom-accessibility=small; 73e1830a/contrast-accessibility=contrast1; 73e1830a/language=fr; 73e1830a/possibleLanguages=en,fr; 73e1830a/expirydate=Mon Apr 04 2016 14:16:29 GMT+0200; 73e1830a/sessid=TNwCIDDf28hpM3tY3Vxh3dZW; 73e1830a/context=oemhGH45j2m4Z0PBCelYdeusPSDUuLwIOGNidHcmwmeljTNMXWyZ1ShDyIlShHpV; 73e1830a/login=admin; 743bf390/accept-language=fr,fr-FR; 743bf390/sessid=AFqt5GRiNgpnAKcqeu3HmMqd; 25200fcf/accept-language=fr,fr-FR; 25200fcf/zoom-accessibility=small; 25200fcf/contrast-accessibility=contrast1; 25200fcf/language=fr; 25200fcf/possibleLanguages=en,fr; 25200fcf/expirydate=Mon Apr 04 2016 15:07:10 GMT+0200; 25200fcf/sessid=xTspBARnRNFjtYKEZPR1jxl1; 25200fcf/context=NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL; 25200fcf/login=admin
+Connection: keep-alive
+
+{"parameters":{"type":"ToD","ID":"78:A8:73:29:27:15"}}
+RESPONSE TO #1
+HTTP/1.1 200 OK
+Server: Grom
+Date: Mon, 04 Apr 2016 12:57:11 +0000
+Content-Type: application/x-sah-ws-4-call+json; charset=UTF-8
+Cache-Control: no-store, no-cache, must-revalidate
+Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+Transfer-Encoding: chunked
+
+124
+{"status":true,"data":{"LinkType":"dsl","LinkState":"up","MACAddress":"E8:F1:B0:CE:09:0C","Protocol":"ppp","ConnectionState":"Connected","LastConnectionError":"ERROR_NONE","IPAddress":"90.32.245.194","RemoteGateway":"193.253.160.3","DNSServers":"81.253.149.1,80.10.246.130","IPv6Address":""}}
+0
+
+
+RESPONSE TO #2
+HTTP/1.1 200 OK
+Server: Grom
+Date: Mon, 04 Apr 2016 12:57:11 +0000
+Content-Type: application/json; charset=UTF-8
+Cache-Control: no-store, no-cache, must-revalidate
+Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+Transfer-Encoding: chunked
+
+428
+{"result":{"status":{"Key":"78:A8:73:29:27:15","DiscoverySource":"bridge","Name":"android-e2b6cf5adadfae57","DeviceType":"Mobile","Active":true,"Tags":"lan edev mac physical wifi ipv4 ipv6 dhcp","LastConnection":"2016-04-04T12:57:11Z","LastChanged":"2016-04-04T12:54:51Z","Master":"","PhysAddress":"78:A8:73:29:27:15","Ageing":false,"Layer2Interface":"wl0","IPAddress":"192.168.1.32","IPAddressSource":"DHCP","VendorClassID":"dhcpcd-5.5.6","UserClassID":"","ClientID":"01:78:A8:73:29:27:15","SerialNumber":"","ProductClass":"","OUI":"","Index":"818","Actions":[{"Function":"setName","Name":"Edit Name","Arguments":[{"Name":"name","Type":"string","Mandatory":true},{"Name":"source","Type":"string","Mandatory":false}]}],"Alternative":[],"Names":[{"Name":"PC-818","Source":"default"},{"Name":"android-e2b6cf5adadfae57","Source":"dhcp"}],"DeviceTypes":[{"Type":"Computer","Source":"default"},{"Type":"Mobile","Source":"dhcp"}],"IPv4Address":[{"Address":"192.168.1.32","Status":"reachable","Scope":"global","AddressSource":"DHCP","Reserved":false}],"IPv6Address":[]}}}
+0
+
+
+RESPONSE TO #3
+HTTP/1.1 200 OK
+Server: Grom
+Date: Mon, 04 Apr 2016 12:57:11 +0000
+Content-Type: application/json; charset=UTF-8
+Cache-Control: no-store, no-cache, must-revalidate
+Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+Transfer-Encoding: chunked
+
+AD
+{"result":{"status":true,"data":{"scheduleInfo":{"ID":"78:A8:73:29:27:15","enable":true,"base":"Weekly","def":"Enable","override":"Enable","value":"Enable","schedule":[]}}}}
+0
+
+
+REQUEST #4
+POST /sysbus/Scheduler:addSchedule HTTP/1.1
+Host: 192.168.1.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0
+Accept: text/javascript
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+X-Prototype-Version: 1.7
+Content-Type: application/x-sah-ws-1-call+json; charset=UTF-8
+X-Context: NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL
+Referer: http://192.168.1.1/configAccessScheduling.html?78%3AA8%3A73%3A29%3A27%3A15
+Content-Length: 159
+Cookie: UILang=fr; 73e1830a/accept-language=fr,fr-FR; 73e1830a/zoom-accessibility=small; 73e1830a/contrast-accessibility=contrast1; 73e1830a/language=fr; 73e1830a/possibleLanguages=en,fr; 73e1830a/expirydate=Mon Apr 04 2016 14:16:29 GMT+0200; 73e1830a/sessid=TNwCIDDf28hpM3tY3Vxh3dZW; 73e1830a/context=oemhGH45j2m4Z0PBCelYdeusPSDUuLwIOGNidHcmwmeljTNMXWyZ1ShDyIlShHpV; 73e1830a/login=admin; 743bf390/accept-language=fr,fr-FR; 743bf390/sessid=AFqt5GRiNgpnAKcqeu3HmMqd; 25200fcf/accept-language=fr,fr-FR; 25200fcf/zoom-accessibility=small; 25200fcf/contrast-accessibility=contrast1; 25200fcf/language=fr; 25200fcf/possibleLanguages=en,fr; 25200fcf/expirydate=Mon Apr 04 2016 15:07:25 GMT+0200; 25200fcf/sessid=xTspBARnRNFjtYKEZPR1jxl1; 25200fcf/context=NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL; 25200fcf/login=admin
+Connection: keep-alive
+
+{"parameters":{"type":"ToD","info":{"ID":"78:A8:73:29:27:15","enable":true,"base":"Weekly","def":"Enable","override":"Enable","value":"Enable","schedule":[]}}}
+RESPONSE TO #4
+HTTP/1.1 200 OK
+Server: Grom
+Date: Mon, 04 Apr 2016 12:57:26 +0000
+Content-Type: application/json; charset=UTF-8
+Cache-Control: no-store, no-cache, must-revalidate
+Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+Transfer-Encoding: chunked
+
+1A
+{"result":{"status":true}}
+0
+
+
+REQUEST #5
+POST /sysbus/NMC:getWANStatus HTTP/1.1
+Host: 192.168.1.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0
+Accept: text/javascript, text/html, application/xml, text/xml, */*
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+X-Prototype-Version: 1.7
+Content-Type: application/x-sah-ws-4-call+json; charset=UTF-8
+X-Context: NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL
+X-Sah-Request-Type: idle
+Referer: http://192.168.1.1/
+Content-Length: 0
+Cookie: UILang=fr; 73e1830a/accept-language=fr,fr-FR; 73e1830a/zoom-accessibility=small; 73e1830a/contrast-accessibility=contrast1; 73e1830a/language=fr; 73e1830a/possibleLanguages=en,fr; 73e1830a/expirydate=Mon Apr 04 2016 14:16:29 GMT+0200; 73e1830a/sessid=TNwCIDDf28hpM3tY3Vxh3dZW; 73e1830a/context=oemhGH45j2m4Z0PBCelYdeusPSDUuLwIOGNidHcmwmeljTNMXWyZ1ShDyIlShHpV; 73e1830a/login=admin; 743bf390/accept-language=fr,fr-FR; 743bf390/sessid=AFqt5GRiNgpnAKcqeu3HmMqd; 25200fcf/accept-language=fr,fr-FR; 25200fcf/zoom-accessibility=small; 25200fcf/contrast-accessibility=contrast1; 25200fcf/language=fr; 25200fcf/possibleLanguages=en,fr; 25200fcf/expirydate=Mon Apr 04 2016 15:07:25 GMT+0200; 25200fcf/sessid=xTspBARnRNFjtYKEZPR1jxl1; 25200fcf/context=NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL; 25200fcf/login=admin
+Connection: keep-alive
+
+
+REQUEST #6
+POST /sysbus/Devices:get HTTP/1.1
+Host: 192.168.1.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0
+Accept: text/javascript
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+X-Prototype-Version: 1.7
+Content-Type: application/x-sah-ws-1-call+json; charset=UTF-8
+X-Context: NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL
+X-Sah-Request-Type: idle
+Referer: http://192.168.1.1/
+Content-Length: 527
+Cookie: UILang=fr; 73e1830a/accept-language=fr,fr-FR; 73e1830a/zoom-accessibility=small; 73e1830a/contrast-accessibility=contrast1; 73e1830a/language=fr; 73e1830a/possibleLanguages=en,fr; 73e1830a/expirydate=Mon Apr 04 2016 14:16:29 GMT+0200; 73e1830a/sessid=TNwCIDDf28hpM3tY3Vxh3dZW; 73e1830a/context=oemhGH45j2m4Z0PBCelYdeusPSDUuLwIOGNidHcmwmeljTNMXWyZ1ShDyIlShHpV; 73e1830a/login=admin; 743bf390/accept-language=fr,fr-FR; 743bf390/sessid=AFqt5GRiNgpnAKcqeu3HmMqd; 25200fcf/accept-language=fr,fr-FR; 25200fcf/zoom-accessibility=small; 25200fcf/contrast-accessibility=contrast1; 25200fcf/language=fr; 25200fcf/possibleLanguages=en,fr; 25200fcf/expirydate=Mon Apr 04 2016 15:07:25 GMT+0200; 25200fcf/sessid=xTspBARnRNFjtYKEZPR1jxl1; 25200fcf/context=NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL; 25200fcf/login=admin
+Connection: keep-alive
+
+{"parameters":{"expression":{"usbM2M":" usb && wmbus and .Active==true and .Master==\"\" ","usb":" printer && physical and .Active==true and .Master==\"\" ","usblogical":"volume && logical and .Active==true and .Master==\"\" ","wifi":"wifi && (edev || hnid) and !homeplug_av and !homeplug_devolo and .Active==true and .Master==\"\" ","eth":"eth && (edev || hnid) and !homeplug_av and !homeplug_devolo and .Active==true  and .Master==\"\" ","dect":"voice && dect && handset && physical and .Active==true  and .Master==\"\"  "}}}
+RESPONSE TO #5
+HTTP/1.1 200 OK
+Server: Grom
+Date: Mon, 04 Apr 2016 12:57:26 +0000
+Content-Type: application/x-sah-ws-4-call+json; charset=UTF-8
+Cache-Control: no-store, no-cache, must-revalidate
+Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+Transfer-Encoding: chunked
+
+124
+{"status":true,"data":{"LinkType":"dsl","LinkState":"up","MACAddress":"E8:F1:B0:CE:09:0C","Protocol":"ppp","ConnectionState":"Connected","LastConnectionError":"ERROR_NONE","IPAddress":"90.32.245.194","RemoteGateway":"193.253.160.3","DNSServers":"81.253.149.1,80.10.246.130","IPv6Address":""}}
+0
+
+
+RESPONSE TO #6
+HTTP/1.1 200 OK
+Server: Grom
+Date: Mon, 04 Apr 2016 12:57:27 +0000
+Content-Type: application/json; charset=UTF-8
+Cache-Control: no-store, no-cache, must-revalidate
+Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+Transfer-Encoding: chunked
+
+1000
+{"result":{"status":{"usbM2M":[],"usb":[],"usblogical":[],"wifi":[{"Key":"78:A8:73:29:27:15","DiscoverySource":"bridge","Name":"android-e2b6cf5adadfae57","DeviceType":"Mobile","Active":true,"Tags":"lan edev mac physical wifi ipv4 ipv6 dhcp","LastConnection":"2016-04-04T12:57:27Z","LastChanged":"2016-04-04T12:54:51Z","Master":"","PhysAddress":"78:A8:73:29:27:15","Ageing":false,"Layer2Interface":"wl0","IPAddress":"192.168.1.32","IPAddressSource":"DHCP","VendorClassID":"dhcpcd-5.5.6","UserClassID":"","ClientID":"01:78:A8:73:29:27:15","SerialNumber":"","ProductClass":"","OUI":"","Index":"818","Actions":[{"Function":"setName","Name":"Edit Name","Arguments":[{"Name":"name","Type":"string","Mandatory":true},{"Name":"source","Type":"string","Mandatory":false}]}],"Alternative":[],"Names":[{"Name":"PC-818","Source":"default"},{"Name":"android-e2b6cf5adadfae57","Source":"dhcp"}],"DeviceTypes":[{"Type":"Computer","Source":"default"},{"Type":"Mobile","Source":"dhcp"}],"IPv4Address":[{"Address":"192.168.1.32","Status":"reachable","Scope":"global","AddressSource":"DHCP","Reserved":false}],"IPv6Address":[]},{"Key":"40:0E:85:62:68:68","DiscoverySource":"bridge","Name":"GT-I9505","DeviceType":"Mobile","Active":true,"Tags":"lan edev mac physical wifi ipv4 ipv6 dhcp","LastConnection":"2016-04-04T12:57:27Z","LastChanged":"2016-04-04T12:53:55Z","Master":"","PhysAddress":"40:0E:85:62:68:68","Ageing":false,"Layer2Interface":"wl0","IPAddress":"192.168.1.29","IPAddressSource":"DHCP","VendorClassID":"dhcpcd-5.5.6","UserClassID":"","ClientID":"01:40:0E:85:62:68:68","SerialNumber":"","ProductClass":"","OUI":"","Index":"822","Actions":[{"Function":"setName","Name":"Edit Name","Arguments":[{"Name":"name","Type":"string","Mandatory":true},{"Name":"source","Type":"string","Mandatory":false}]}],"Alternative":[],"Names":[{"Name":"PC-822","Source":"default"},{"Name":"android-6b49c538f1171ef7","Source":"dhcp"},{"Name":"GT-I9505","Source":"webui"}],"DeviceTypes":[{"Type":"Computer","Source":"default"},{"Type":"Mobile","Source":"dhcp"}],"IPv4Address":[{"Address":"192.168.1.29","Status":"reachable","Scope":"global","AddressSource":"DHCP","Reserved":false}],"IPv6Address":[]},{"Key":"B4:CE:F6:DF:87:8F","DiscoverySource":"bridge","Name":"android-93bdff2ab5b580d2","DeviceType":"Mobile","Active":true,"Tags":"lan edev mac physical wifi ipv4 ipv6 dhcp","LastConnection":"2016-04-04T12:57:27Z","LastChanged":"2016-04-04T12:56:44Z","Master":"","PhysAddress":"B4:CE:F6:DF:87:8F","Ageing":false,"Layer2Interface":"wl0","IPAddress":"192.168.1.17","IPAddressSource":"DHCP","VendorClassID":"android-dhcp-6.0.1","UserClassID":"","ClientID":"01:B4:CE:F6:DF:87:8F","Seri
+RESPONSE TO #6
+alNumber":"","ProductClass":"","OUI":"","Index":"855","Actions":[{"Function":"setName","Name":"Edit Name","Arguments":[{"Name":"name","Type":"string","Mandatory":true},{"Name":"source","Type":"string","Mandatory":false}]}],"Alternative":[],"Names":[{"Name":"PC-855","Source":"default"},{"Name":"android-93bdff2ab5b580d2","Source":"dhcp"}],"DeviceTypes":[{"Type":"Computer","Source":"default"},{"Type":"Mobile","Source":"dhcp"}],"IPv4Address":[{"Address":"192.168.1.17","Status":"not reachable","Scope":"global","AddressSource":"DHCP","Reserved":false}],"IPv6Address":[]},{"Key":"24:DF:6A:D7:9A:12","DiscoverySource":"bridge","Name":"android-dd72117bef397b71","DeviceType":"Mobile","Active":true,"Tags":"lan edev mac physical wifi ipv4 ipv6 dhcp","LastConnection":"2016-04-04T12:57:27Z","LastChanged":"2016-04-04T12:56:43Z","Master":"","PhysAddress":"24:DF:6A:D7:9A:12","Ageing":false,"Layer2Interface":"wl0","IPAddress":"192.168.1.48","IPAddressSource":"DHCP","VendorClassID":"android-dhcp-6.0.1","UserClassID":"","ClientID":"01:24:DF:6A:D7:9A:12","SerialNumber":"","ProductClass":"","OUI":"","Index":"858","Actions":[{"Function":"setName","Name":"Edit Name","Arguments":[{"Name":"name","Type":"string","Mandatory":true},{"Name":"source","Type":"string","Mandatory":false}]}],"Alternative":[],"Names":[{"Name":"PC-858","Source":"default"},{"Name":"android-dd72117bef397b71","Source":"dhcp"}],"DeviceTypes":[{"Type":"Computer","Source":"defau
+F40
+lt"},{"Type"
+RESPONSE TO #6
+:"Mobile","Source":"dhcp"}],"IPv4Address":[{"Address":"192.168.1.48","Status":"reachable","Scope":"global","AddressSource":"DHCP","Reserved":false}],"IPv6Address":[]},{"Key":"64:BC:0C:2A:1B:1E","DiscoverySource":"bridge","Name":"android-e97180333cc63811","DeviceType":"Mobile","Active":true,"Tags":"lan edev mac physical wifi ipv4 ipv6 dhcp","LastConnection":"2016-04-04T12:57:27Z","LastChanged":"2016-04-04T12:56:57Z","Master":"","PhysAddress":"64:BC:0C:2A:1B:1E","Ageing":false,"Layer2Interface":"wl0","IPAddress":"192.168.1.19","IPAddressSource":"DHCP","VendorClassID":"android-dhcp-6.0.1","UserClassID":"","ClientID":"01:64:BC:0C:2A:1B:1E","SerialNumber":"","ProductClass":"","OUI":"","Index":"892","Actions":[{"Function":"setName","Name":"Edit Name","Arguments":[{"Name":"name","Type":"string","Mandatory":true},{"Name":"source","Type":"string","Mandatory":false}]}],"Alternative":[],"Names":[{"Name":"PC-892","Source":"default"},{"Name":"android-e97180333cc63811","Source":"dhcp"}],"DeviceTypes":[{"Type":"Computer","Source":"default"},{"Type":"Mobile","Source":"dhcp"}],"IPv4Address":[{"Address":"192.168.1.19","Status":"reachable","Scope":"global","AddressSource":"DHCP","Reserved":false}],"IPv6Address":[]},{"Key":"08:11:96:A0:1F:BC","DiscoverySource":"bridge","Name":"EB-OR1004527","DeviceType":"Computer","Active":true,"Tags":"lan edev mac physical wifi ipv4 ipv6 dhcp","LastConnection":"2016-04-04T12:57:27Z","LastChanged":"2016-04-04T12:52:32Z","Master":"","PhysAddress":"08:11:96:A0:1F:BC","Ageing":false,"Layer2Interface":"wl0","IPAddress":"192.168.1.23","IPAddressSource":"DHCP","VendorClassID":"MSFT 5.0","UserClassID":"","ClientID":"01:08:11:96:A0:1F:BC","SerialNumber":"","ProductClass":"","OUI":"","Index":"905","Actions":[{"Function":"setName","Name":"Edit Name","Arguments":[{"Name":"name","Type":"string","Mandatory":true},{"Name":"source","Type":"string","Mandatory":false}]}],"Alternative":[],"Names":[{"Name":"PC-905","Source":"default"},{"Name":"EB-OR1004527","Source":"dhcp"}],"DeviceTypes":[{"Type":"Computer","Source":"default"},{"Type":"Computer","Source":"dhcp"}],"IPv4Address":[{"Address":"192.168.1.23","Status":"reachable","Scope":"global","AddressSource":"DHCP","Reserved":false}],"IPv6Address":[]}],"eth":[],"dect":[{"Key":"HS02633A1CDA","DiscoverySource":"voice_handsets","Name":"DECT1","DeviceType":"Phone","Active":true,"Tags":"voice handset dect physical","LastConnection":"2016-04-04T12:57:27Z","LastChanged":"0001-01-01T00:00:00Z","Master":"","DirectoryNumber":"202","EndpointType":"DECT CAT-iq 2.0","OutgoingTrunkLine":"LINE1","Index":"903","Actions":[{"Function":"setName","Name":"Edit Name","Arguments":[{"Name":"name","Type":"string","Mandatory":true},{"Name":"source","Type":"string","Mandatory":false}]},{"Function":"unPair","Name":"Unpair handset"},{"Function":"ring","Name":"Ring handset"}],"Alternative":[],"Names":[{"Name":"HS02633A1CDA","Source":"default"},{"Name":"
+RESPONSE TO #6
+DECT1","Source":"handset"},{"Name":"DECT1","Source":"webui"}],"DeviceTypes":[{"Type":"Phone","Source":"tags"},{"Type":"Computer","Source":"default"}]},{"Key":"HS01655633AC","DiscoverySource":"voice_handsets","Name":"DECT2","DeviceType":"Phone","Active":true,"Tags":"voice handset dect physical","LastConnection":"2016-04-04T12:57:27Z","LastChanged":"0001-01-01T00:00:00Z","Master":"","DirectoryNumber":"203","EndpointType":"DECT CAT-iq 2.0","OutgoingTrunkLine":"LINE1","Index":"904","Actions":[{"Function":"setName","Name":"Edit Name","Arguments":[{"Name":"name","Type":"string","Mandatory":true},{"Name":"source","Type":"string","Mandatory":false}]},{"Function":"unPair","Name":"Unpair handset"},{"Function":"ring","Name":"Ring handset"}],"Alternative":[],"Names":[{"Name":"HS01655633AC","Source":"default"},{"Name":"DECT2","Source":"handset"},{"Name":"DECT2","Source":"webui"}],"DeviceTypes":[{"Type":"Phone","Source":"tags"},{"Type":"Computer","Source":"default"}]}]}}}
+0
+
+
+REQUEST #7
+POST /sysbus/eventmanager:get_events HTTP/1.1
+Host: 192.168.1.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0
+Accept: text/javascript, text/html, application/xml, text/xml, */*
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+X-Prototype-Version: 1.7
+Content-Type: application/x-sah-ws-4-call+json; charset=UTF-8
+X-Context: NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL
+X-Sah-Request-Type: idle
+Referer: http://192.168.1.1/
+Content-Length: 504
+Cookie: UILang=fr; 73e1830a/accept-language=fr,fr-FR; 73e1830a/zoom-accessibility=small; 73e1830a/contrast-accessibility=contrast1; 73e1830a/language=fr; 73e1830a/possibleLanguages=en,fr; 73e1830a/expirydate=Mon Apr 04 2016 14:16:29 GMT+0200; 73e1830a/sessid=TNwCIDDf28hpM3tY3Vxh3dZW; 73e1830a/context=oemhGH45j2m4Z0PBCelYdeusPSDUuLwIOGNidHcmwmeljTNMXWyZ1ShDyIlShHpV; 73e1830a/login=admin; 743bf390/accept-language=fr,fr-FR; 743bf390/sessid=AFqt5GRiNgpnAKcqeu3HmMqd; 25200fcf/accept-language=fr,fr-FR; 25200fcf/zoom-accessibility=small; 25200fcf/contrast-accessibility=contrast1; 25200fcf/language=fr; 25200fcf/possibleLanguages=en,fr; 25200fcf/expirydate=Mon Apr 04 2016 15:07:25 GMT+0200; 25200fcf/sessid=xTspBARnRNFjtYKEZPR1jxl1; 25200fcf/context=NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL; 25200fcf/login=admin
+Connection: keep-alive
+
+{"parameters":{"channelid":0,"events":[{"service":"Devices.Device","event":"topology_changed"},{"service":"Devices.Device","event":"wifi_device_updated"},{"service":"Devices.Device","event":"eth_device_updated"},{"service":"Devices.Device","event":"usb_device_updated"},{"service":"Devices.Device","event":"logical_device_updated"},{"service":"Devices.Device","event":"self_device_updated"},{"service":"Devices.Device","event":"device_error"},{"service":"Devices.Device","event":"device_error_solved"}]}}
+REQUEST #8
+POST /sysbus/NMC/OrangeTV:getIPTVStatus HTTP/1.1
+Host: 192.168.1.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0
+Accept: text/javascript
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+X-Prototype-Version: 1.7
+Content-Type: application/x-sah-ws-1-call+json; charset=UTF-8
+X-Context: NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL
+X-Sah-Request-Type: idle
+Referer: http://192.168.1.1/
+Content-Length: 17
+Cookie: UILang=fr; 73e1830a/accept-language=fr,fr-FR; 73e1830a/zoom-accessibility=small; 73e1830a/contrast-accessibility=contrast1; 73e1830a/language=fr; 73e1830a/possibleLanguages=en,fr; 73e1830a/expirydate=Mon Apr 04 2016 14:16:29 GMT+0200; 73e1830a/sessid=TNwCIDDf28hpM3tY3Vxh3dZW; 73e1830a/context=oemhGH45j2m4Z0PBCelYdeusPSDUuLwIOGNidHcmwmeljTNMXWyZ1ShDyIlShHpV; 73e1830a/login=admin; 743bf390/accept-language=fr,fr-FR; 743bf390/sessid=AFqt5GRiNgpnAKcqeu3HmMqd; 25200fcf/accept-language=fr,fr-FR; 25200fcf/zoom-accessibility=small; 25200fcf/contrast-accessibility=contrast1; 25200fcf/language=fr; 25200fcf/possibleLanguages=en,fr; 25200fcf/expirydate=Mon Apr 04 2016 15:07:25 GMT+0200; 25200fcf/sessid=xTspBARnRNFjtYKEZPR1jxl1; 25200fcf/context=NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL; 25200fcf/login=admin
+Connection: keep-alive
+
+{"parameters":{}}
+REQUEST #9
+POST /sysbus/VoiceService/VoiceApplication:listTrunks HTTP/1.1
+Host: 192.168.1.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0
+Accept: text/javascript
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+X-Prototype-Version: 1.7
+Content-Type: application/x-sah-ws-1-call+json; charset=UTF-8
+X-Context: NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL
+X-Sah-Request-Type: idle
+Referer: http://192.168.1.1/
+Content-Length: 17
+Cookie: UILang=fr; 73e1830a/accept-language=fr,fr-FR; 73e1830a/zoom-accessibility=small; 73e1830a/contrast-accessibility=contrast1; 73e1830a/language=fr; 73e1830a/possibleLanguages=en,fr; 73e1830a/expirydate=Mon Apr 04 2016 14:16:29 GMT+0200; 73e1830a/sessid=TNwCIDDf28hpM3tY3Vxh3dZW; 73e1830a/context=oemhGH45j2m4Z0PBCelYdeusPSDUuLwIOGNidHcmwmeljTNMXWyZ1ShDyIlShHpV; 73e1830a/login=admin; 743bf390/accept-language=fr,fr-FR; 743bf390/sessid=AFqt5GRiNgpnAKcqeu3HmMqd; 25200fcf/accept-language=fr,fr-FR; 25200fcf/zoom-accessibility=small; 25200fcf/contrast-accessibility=contrast1; 25200fcf/language=fr; 25200fcf/possibleLanguages=en,fr; 25200fcf/expirydate=Mon Apr 04 2016 15:07:25 GMT+0200; 25200fcf/sessid=xTspBARnRNFjtYKEZPR1jxl1; 25200fcf/context=NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL; 25200fcf/login=admin
+Connection: keep-alive
+
+{"parameters":{}}
+RESPONSE TO #8
+HTTP/1.1 200 OK
+Server: Grom
+Date: Mon, 04 Apr 2016 12:57:27 +0000
+Content-Type: application/json; charset=UTF-8
+Cache-Control: no-store, no-cache, must-revalidate
+Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+Transfer-Encoding: chunked
+
+3E
+{"result":{"status":null,"data":{"IPTVStatus":"Unavailable"}}}
+0
+
+
+RESPONSE TO #9
+HTTP/1.1 200 OK
+Server: Grom
+Date: Mon, 04 Apr 2016 12:57:27 +0000
+Content-Type: application/json; charset=UTF-8
+Cache-Control: no-store, no-cache, must-revalidate
+Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+Transfer-Encoding: chunked
+
+16C
+{"result":{"status":[{"name":"SIP-Trunk","trunk_lines":[{"name":"LINE1","enable":"Disabled","status":"Disabled","directoryNumber":"+33299121664","event_subscribe_lines":[{}]}],"sip":{"subscriptionInfo":[{}]}},{"name":"H323-Trunk","trunk_lines":[{"name":"LINE3","enable":"Disabled","status":"Disabled","directoryNumber":"","event_subscribe_lines":[]}],"h323":{}}]}}
+0
+
+
+REQUEST #10
+POST /sysbus/NMC:getWANStatus HTTP/1.1
+Host: 192.168.1.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0
+Accept: text/javascript
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+X-Prototype-Version: 1.7
+Content-Type: application/x-sah-ws-1-call+json; charset=UTF-8
+X-Context: NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL
+X-Sah-Request-Type: idle
+Referer: http://192.168.1.1/
+Content-Length: 17
+Cookie: UILang=fr; 73e1830a/accept-language=fr,fr-FR; 73e1830a/zoom-accessibility=small; 73e1830a/contrast-accessibility=contrast1; 73e1830a/language=fr; 73e1830a/possibleLanguages=en,fr; 73e1830a/expirydate=Mon Apr 04 2016 14:16:29 GMT+0200; 73e1830a/sessid=TNwCIDDf28hpM3tY3Vxh3dZW; 73e1830a/context=oemhGH45j2m4Z0PBCelYdeusPSDUuLwIOGNidHcmwmeljTNMXWyZ1ShDyIlShHpV; 73e1830a/login=admin; 743bf390/accept-language=fr,fr-FR; 743bf390/sessid=AFqt5GRiNgpnAKcqeu3HmMqd; 25200fcf/accept-language=fr,fr-FR; 25200fcf/zoom-accessibility=small; 25200fcf/contrast-accessibility=contrast1; 25200fcf/language=fr; 25200fcf/possibleLanguages=en,fr; 25200fcf/expirydate=Mon Apr 04 2016 15:07:25 GMT+0200; 25200fcf/sessid=xTspBARnRNFjtYKEZPR1jxl1; 25200fcf/context=NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL; 25200fcf/login=admin
+Connection: keep-alive
+
+{"parameters":{}}
+RESPONSE TO #10
+HTTP/1.1 200 OK
+Server: Grom
+Date: Mon, 04 Apr 2016 12:57:27 +0000
+Content-Type: application/json; charset=UTF-8
+Cache-Control: no-store, no-cache, must-revalidate
+Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+Transfer-Encoding: chunked
+
+12F
+{"result":{"status":true,"data":{"LinkType":"dsl","LinkState":"up","MACAddress":"E8:F1:B0:CE:09:0C","Protocol":"ppp","ConnectionState":"Connected","LastConnectionError":"ERROR_NONE","IPAddress":"90.32.245.194","RemoteGateway":"193.253.160.3","DNSServers":"81.253.149.1,80.10.246.130","IPv6Address":""}}}
+0
+
+
+REQUEST #11
+POST /sysbus/NMC/Wifi:get HTTP/1.1
+Host: 192.168.1.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0
+Accept: text/javascript
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+X-Prototype-Version: 1.7
+Content-Type: application/x-sah-ws-1-call+json; charset=UTF-8
+X-Context: NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL
+X-Sah-Request-Type: idle
+Referer: http://192.168.1.1/
+Content-Length: 17
+Cookie: UILang=fr; 73e1830a/accept-language=fr,fr-FR; 73e1830a/zoom-accessibility=small; 73e1830a/contrast-accessibility=contrast1; 73e1830a/language=fr; 73e1830a/possibleLanguages=en,fr; 73e1830a/expirydate=Mon Apr 04 2016 14:16:29 GMT+0200; 73e1830a/sessid=TNwCIDDf28hpM3tY3Vxh3dZW; 73e1830a/context=oemhGH45j2m4Z0PBCelYdeusPSDUuLwIOGNidHcmwmeljTNMXWyZ1ShDyIlShHpV; 73e1830a/login=admin; 743bf390/accept-language=fr,fr-FR; 743bf390/sessid=AFqt5GRiNgpnAKcqeu3HmMqd; 25200fcf/accept-language=fr,fr-FR; 25200fcf/zoom-accessibility=small; 25200fcf/contrast-accessibility=contrast1; 25200fcf/language=fr; 25200fcf/possibleLanguages=en,fr; 25200fcf/expirydate=Mon Apr 04 2016 15:07:25 GMT+0200; 25200fcf/sessid=xTspBARnRNFjtYKEZPR1jxl1; 25200fcf/context=NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL; 25200fcf/login=admin
+Connection: keep-alive
+
+{"parameters":{}}
+RESPONSE TO #11
+HTTP/1.1 200 OK
+Server: Grom
+Date: Mon, 04 Apr 2016 12:57:28 +0000
+Content-Type: application/json; charset=UTF-8
+Cache-Control: no-store, no-cache, must-revalidate
+Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+Transfer-Encoding: chunked
+
+4D
+{"result":{"status":{"Enable":true,"Status":true,"ConfigurationMode":false}}}
+0
+
+
+REQUEST #12
+POST /sysbus/NMC/OrangeTV:getIPTVStatus HTTP/1.1
+Host: 192.168.1.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0
+Accept: text/javascript
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+X-Prototype-Version: 1.7
+Content-Type: application/x-sah-ws-1-call+json; charset=UTF-8
+X-Context: NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL
+X-Sah-Request-Type: idle
+Referer: http://192.168.1.1/
+Content-Length: 17
+Cookie: UILang=fr; 73e1830a/accept-language=fr,fr-FR; 73e1830a/zoom-accessibility=small; 73e1830a/contrast-accessibility=contrast1; 73e1830a/language=fr; 73e1830a/possibleLanguages=en,fr; 73e1830a/expirydate=Mon Apr 04 2016 14:16:29 GMT+0200; 73e1830a/sessid=TNwCIDDf28hpM3tY3Vxh3dZW; 73e1830a/context=oemhGH45j2m4Z0PBCelYdeusPSDUuLwIOGNidHcmwmeljTNMXWyZ1ShDyIlShHpV; 73e1830a/login=admin; 743bf390/accept-language=fr,fr-FR; 743bf390/sessid=AFqt5GRiNgpnAKcqeu3HmMqd; 25200fcf/accept-language=fr,fr-FR; 25200fcf/zoom-accessibility=small; 25200fcf/contrast-accessibility=contrast1; 25200fcf/language=fr; 25200fcf/possibleLanguages=en,fr; 25200fcf/expirydate=Mon Apr 04 2016 15:07:30 GMT+0200; 25200fcf/sessid=xTspBARnRNFjtYKEZPR1jxl1; 25200fcf/context=NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL; 25200fcf/login=admin
+Connection: keep-alive
+
+{"parameters":{}}
+REQUEST #13
+POST /sysbus/VoiceService/VoiceApplication:listTrunks HTTP/1.1
+Host: 192.168.1.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0
+Accept: text/javascript
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+X-Prototype-Version: 1.7
+Content-Type: application/x-sah-ws-1-call+json; charset=UTF-8
+X-Context: NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL
+X-Sah-Request-Type: idle
+Referer: http://192.168.1.1/
+Content-Length: 17
+Cookie: UILang=fr; 73e1830a/accept-language=fr,fr-FR; 73e1830a/zoom-accessibility=small; 73e1830a/contrast-accessibility=contrast1; 73e1830a/language=fr; 73e1830a/possibleLanguages=en,fr; 73e1830a/expirydate=Mon Apr 04 2016 14:16:29 GMT+0200; 73e1830a/sessid=TNwCIDDf28hpM3tY3Vxh3dZW; 73e1830a/context=oemhGH45j2m4Z0PBCelYdeusPSDUuLwIOGNidHcmwmeljTNMXWyZ1ShDyIlShHpV; 73e1830a/login=admin; 743bf390/accept-language=fr,fr-FR; 743bf390/sessid=AFqt5GRiNgpnAKcqeu3HmMqd; 25200fcf/accept-language=fr,fr-FR; 25200fcf/zoom-accessibility=small; 25200fcf/contrast-accessibility=contrast1; 25200fcf/language=fr; 25200fcf/possibleLanguages=en,fr; 25200fcf/expirydate=Mon Apr 04 2016 15:07:30 GMT+0200; 25200fcf/sessid=xTspBARnRNFjtYKEZPR1jxl1; 25200fcf/context=NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL; 25200fcf/login=admin
+Connection: keep-alive
+
+{"parameters":{}}
+REQUEST #14
+POST /sysbus/eventmanager:get_events HTTP/1.1
+Host: 192.168.1.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0
+Accept: text/javascript, text/html, application/xml, text/xml, */*
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+X-Prototype-Version: 1.7
+Content-Type: application/x-sah-ws-4-call+json; charset=UTF-8
+X-Context: NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL
+X-Sah-Request-Type: idle
+Referer: http://192.168.1.1/
+Content-Length: 504
+Cookie: UILang=fr; 73e1830a/accept-language=fr,fr-FR; 73e1830a/zoom-accessibility=small; 73e1830a/contrast-accessibility=contrast1; 73e1830a/language=fr; 73e1830a/possibleLanguages=en,fr; 73e1830a/expirydate=Mon Apr 04 2016 14:16:29 GMT+0200; 73e1830a/sessid=TNwCIDDf28hpM3tY3Vxh3dZW; 73e1830a/context=oemhGH45j2m4Z0PBCelYdeusPSDUuLwIOGNidHcmwmeljTNMXWyZ1ShDyIlShHpV; 73e1830a/login=admin; 743bf390/accept-language=fr,fr-FR; 743bf390/sessid=AFqt5GRiNgpnAKcqeu3HmMqd; 25200fcf/accept-language=fr,fr-FR; 25200fcf/zoom-accessibility=small; 25200fcf/contrast-accessibility=contrast1; 25200fcf/language=fr; 25200fcf/possibleLanguages=en,fr; 25200fcf/expirydate=Mon Apr 04 2016 15:07:30 GMT+0200; 25200fcf/sessid=xTspBARnRNFjtYKEZPR1jxl1; 25200fcf/context=NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL; 25200fcf/login=admin
+Connection: keep-alive
+
+{"parameters":{"channelid":0,"events":[{"service":"Devices.Device","event":"topology_changed"},{"service":"Devices.Device","event":"wifi_device_updated"},{"service":"Devices.Device","event":"eth_device_updated"},{"service":"Devices.Device","event":"usb_device_updated"},{"service":"Devices.Device","event":"logical_device_updated"},{"service":"Devices.Device","event":"self_device_updated"},{"service":"Devices.Device","event":"device_error"},{"service":"Devices.Device","event":"device_error_solved"}]}}
+RESPONSE TO #12
+HTTP/1.1 200 OK
+Server: Grom
+Date: Mon, 04 Apr 2016 12:57:31 +0000
+Content-Type: application/json; charset=UTF-8
+Cache-Control: no-store, no-cache, must-revalidate
+Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+Transfer-Encoding: chunked
+
+3E
+{"result":{"status":null,"data":{"IPTVStatus":"Unavailable"}}}
+0
+
+
+RESPONSE TO #13
+HTTP/1.1 200 OK
+Server: Grom
+Date: Mon, 04 Apr 2016 12:57:31 +0000
+Content-Type: application/json; charset=UTF-8
+Cache-Control: no-store, no-cache, must-revalidate
+Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+Transfer-Encoding: chunked
+
+16C
+{"result":{"status":[{"name":"SIP-Trunk","trunk_lines":[{"name":"LINE1","enable":"Disabled","status":"Disabled","directoryNumber":"+33299121664","event_subscribe_lines":[{}]}],"sip":{"subscriptionInfo":[{}]}},{"name":"H323-Trunk","trunk_lines":[{"name":"LINE3","enable":"Disabled","status":"Disabled","directoryNumber":"","event_subscribe_lines":[]}],"h323":{}}]}}
+0
+
+
+REQUEST #15
+POST /sysbus/NMC:getWANStatus HTTP/1.1
+Host: 192.168.1.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0
+Accept: text/javascript, text/html, application/xml, text/xml, */*
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+X-Prototype-Version: 1.7
+Content-Type: application/x-sah-ws-4-call+json; charset=UTF-8
+X-Context: NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL
+X-Sah-Request-Type: idle
+Referer: http://192.168.1.1/configAccessScheduling.html?78%3AA8%3A73%3A29%3A27%3A15
+Content-Length: 0
+Cookie: UILang=fr; 73e1830a/accept-language=fr,fr-FR; 73e1830a/zoom-accessibility=small; 73e1830a/contrast-accessibility=contrast1; 73e1830a/language=fr; 73e1830a/possibleLanguages=en,fr; 73e1830a/expirydate=Mon Apr 04 2016 14:16:29 GMT+0200; 73e1830a/sessid=TNwCIDDf28hpM3tY3Vxh3dZW; 73e1830a/context=oemhGH45j2m4Z0PBCelYdeusPSDUuLwIOGNidHcmwmeljTNMXWyZ1ShDyIlShHpV; 73e1830a/login=admin; 743bf390/accept-language=fr,fr-FR; 743bf390/sessid=AFqt5GRiNgpnAKcqeu3HmMqd; 25200fcf/accept-language=fr,fr-FR; 25200fcf/zoom-accessibility=small; 25200fcf/contrast-accessibility=contrast1; 25200fcf/language=fr; 25200fcf/possibleLanguages=en,fr; 25200fcf/expirydate=Mon Apr 04 2016 15:07:30 GMT+0200; 25200fcf/sessid=xTspBARnRNFjtYKEZPR1jxl1; 25200fcf/context=NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL; 25200fcf/login=admin
+Connection: keep-alive
+
+
+REQUEST #16
+POST /sysbus/Scheduler:getSchedule HTTP/1.1
+Host: 192.168.1.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0
+Accept: text/javascript
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+X-Prototype-Version: 1.7
+Content-Type: application/x-sah-ws-1-call+json; charset=UTF-8
+X-Context: NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL
+Referer: http://192.168.1.1/configAccessScheduling.html?78%3AA8%3A73%3A29%3A27%3A15
+Content-Length: 54
+Cookie: UILang=fr; 73e1830a/accept-language=fr,fr-FR; 73e1830a/zoom-accessibility=small; 73e1830a/contrast-accessibility=contrast1; 73e1830a/language=fr; 73e1830a/possibleLanguages=en,fr; 73e1830a/expirydate=Mon Apr 04 2016 14:16:29 GMT+0200; 73e1830a/sessid=TNwCIDDf28hpM3tY3Vxh3dZW; 73e1830a/context=oemhGH45j2m4Z0PBCelYdeusPSDUuLwIOGNidHcmwmeljTNMXWyZ1ShDyIlShHpV; 73e1830a/login=admin; 743bf390/accept-language=fr,fr-FR; 743bf390/sessid=AFqt5GRiNgpnAKcqeu3HmMqd; 25200fcf/accept-language=fr,fr-FR; 25200fcf/zoom-accessibility=small; 25200fcf/contrast-accessibility=contrast1; 25200fcf/language=fr; 25200fcf/possibleLanguages=en,fr; 25200fcf/expirydate=Mon Apr 04 2016 15:07:31 GMT+0200; 25200fcf/sessid=xTspBARnRNFjtYKEZPR1jxl1; 25200fcf/context=NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL; 25200fcf/login=admin
+Connection: keep-alive
+
+{"parameters":{"type":"ToD","ID":"78:A8:73:29:27:15"}}
+REQUEST #17
+POST /sysbus/Devices/Device/78:A8:73:29:27:15:get HTTP/1.1
+Host: 192.168.1.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0
+Accept: text/javascript
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+X-Prototype-Version: 1.7
+Content-Type: application/x-sah-ws-1-call+json; charset=UTF-8
+X-Context: NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL
+Referer: http://192.168.1.1/configAccessScheduling.html?78%3AA8%3A73%3A29%3A27%3A15
+Content-Length: 17
+Cookie: UILang=fr; 73e1830a/accept-language=fr,fr-FR; 73e1830a/zoom-accessibility=small; 73e1830a/contrast-accessibility=contrast1; 73e1830a/language=fr; 73e1830a/possibleLanguages=en,fr; 73e1830a/expirydate=Mon Apr 04 2016 14:16:29 GMT+0200; 73e1830a/sessid=TNwCIDDf28hpM3tY3Vxh3dZW; 73e1830a/context=oemhGH45j2m4Z0PBCelYdeusPSDUuLwIOGNidHcmwmeljTNMXWyZ1ShDyIlShHpV; 73e1830a/login=admin; 743bf390/accept-language=fr,fr-FR; 743bf390/sessid=AFqt5GRiNgpnAKcqeu3HmMqd; 25200fcf/accept-language=fr,fr-FR; 25200fcf/zoom-accessibility=small; 25200fcf/contrast-accessibility=contrast1; 25200fcf/language=fr; 25200fcf/possibleLanguages=en,fr; 25200fcf/expirydate=Mon Apr 04 2016 15:07:31 GMT+0200; 25200fcf/sessid=xTspBARnRNFjtYKEZPR1jxl1; 25200fcf/context=NZUgqWaXK1MSRM4rvIZiDpffQ0s0fnDSaoXqaXbINMpsogJIOwOfLTipQAmVLQCL; 25200fcf/login=admin
+Connection: keep-alive
+
+{"parameters":{}}
+RESPONSE TO #15
+HTTP/1.1 200 OK
+Server: Grom
+Date: Mon, 04 Apr 2016 12:57:32 +0000
+Content-Type: application/x-sah-ws-4-call+json; charset=UTF-8
+Cache-Control: no-store, no-cache, must-revalidate
+Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+Transfer-Encoding: chunked
+
+124
+{"status":true,"data":{"LinkType":"dsl","LinkState":"up","MACAddress":"E8:F1:B0:CE:09:0C","Protocol":"ppp","ConnectionState":"Connected","LastConnectionError":"ERROR_NONE","IPAddress":"90.32.245.194","RemoteGateway":"193.253.160.3","DNSServers":"81.253.149.1,80.10.246.130","IPv6Address":""}}
+0
+
+
+RESPONSE TO #16
+HTTP/1.1 200 OK
+Server: Grom
+Date: Mon, 04 Apr 2016 12:57:32 +0000
+Content-Type: application/json; charset=UTF-8
+Cache-Control: no-store, no-cache, must-revalidate
+Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+Transfer-Encoding: chunked
+
+AD
+{"result":{"status":true,"data":{"scheduleInfo":{"ID":"78:A8:73:29:27:15","enable":true,"base":"Weekly","def":"Enable","override":"Enable","value":"Enable","schedule":[]}}}}
+0
+
+
+RESPONSE TO #17
+HTTP/1.1 200 OK
+Server: Grom
+Date: Mon, 04 Apr 2016 12:57:32 +0000
+Content-Type: application/json; charset=UTF-8
+Cache-Control: no-store, no-cache, must-revalidate
+Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+Transfer-Encoding: chunked
+
+428
+{"result":{"status":{"Key":"78:A8:73:29:27:15","DiscoverySource":"bridge","Name":"android-e2b6cf5adadfae57","DeviceType":"Mobile","Active":true,"Tags":"lan edev mac physical wifi ipv4 ipv6 dhcp","LastConnection":"2016-04-04T12:57:32Z","LastChanged":"2016-04-04T12:54:51Z","Master":"","PhysAddress":"78:A8:73:29:27:15","Ageing":false,"Layer2Interface":"wl0","IPAddress":"192.168.1.32","IPAddressSource":"DHCP","VendorClassID":"dhcpcd-5.5.6","UserClassID":"","ClientID":"01:78:A8:73:29:27:15","SerialNumber":"","ProductClass":"","OUI":"","Index":"818","Actions":[{"Function":"setName","Name":"Edit Name","Arguments":[{"Name":"name","Type":"string","Mandatory":true},{"Name":"source","Type":"string","Mandatory":false}]}],"Alternative":[],"Names":[{"Name":"PC-818","Source":"default"},{"Name":"android-e2b6cf5adadfae57","Source":"dhcp"}],"DeviceTypes":[{"Type":"Computer","Source":"default"},{"Type":"Mobile","Source":"dhcp"}],"IPv4Address":[{"Address":"192.168.1.32","Status":"reachable","Scope":"global","AddressSource":"DHCP","Reserved":false}],"IPv6Address":[]}}}
+0
+
+
+RESPONSE TO #7
+HTTP/1.1 200 OK
+Server: Grom
+Date: Mon, 04 Apr 2016 12:57:37 +0000
+Content-Type: application/x-sah-ws-4-call+json; charset=UTF-8
+Cache-Control: no-store, no-cache, must-revalidate
+Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+Transfer-Encoding: chunked
+
+27
+{"status":{"channelid":52,"events":[]}}
+0
+
+
+RESPONSE TO #14
+HTTP/1.1 200 OK
+Server: Grom
+Date: Mon, 04 Apr 2016 12:57:37 +0000
+Content-Type: application/x-sah-ws-4-call+json; charset=UTF-8
+Cache-Control: no-store, no-cache, must-revalidate
+Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+Transfer-Encoding: chunked
+
+27
+{"status":{"channelid":53,"events":[]}}
+0
+
