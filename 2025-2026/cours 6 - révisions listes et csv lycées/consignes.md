@@ -14,7 +14,7 @@ une variable à part, pour pouvoir le réécrire en début du nouveau fichier
 
 5- utilise csv.reader et csv.writer pour faire la lecture et l'écriture
 
-6- ajoute une fonction qui relit le fichier filtré, et qui compte le nombre de lycées par ville
+6- ajoute une fonction qui relit le fichier filtré, et qui compte le nombre de lycées par ville.  
 Utiliser un dictionnaire. (bonus : simplifier le code en utilisant un defaultdict ou un Counter)
 
 7- affiche les lycées par ordre décroissant de réussite au bac
