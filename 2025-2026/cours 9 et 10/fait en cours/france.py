@@ -1,4 +1,5 @@
 from collections import Counter
+from dataclasses import dataclass
 
 
 def read_words_from_file() -> list[str]:
@@ -146,3 +147,27 @@ print(get_most_frequent_word3(words))
 # dict[str, int]
 
 print(locals())
+
+
+#################
+
+
+# a user has an age, a name and a salary
+
+
+@dataclass
+class User:
+    age: int
+    name: str
+    salary: float
+
+
+def is_underage(user: User) -> bool:
+    # if user.age < 18:
+    #     return True
+    # return False
+
+    return user.age < 18
+
+
+user = User(age=57, name="francois", salary=42)
