@@ -111,8 +111,7 @@ def main() -> None:
     Donne-moi une réponse concise
     """
 
-    mistral_api_key = "x5uWyLB2ULGWpYV2SklusRR35tnhvFqL"
-    mistral_api_key = "wbZOli4Vy3A6V2sSylWwN4BHKJCFuHdy"
+    mistral_api_key = "TBC"
     response = send_question(mistral_api_key, question)
     print(response)
 
