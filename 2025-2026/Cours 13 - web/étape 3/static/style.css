@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: Arial, sans-serif;
+    color: #243b53;
+    background: linear-gradient(135deg, #ffb703, #8ecae6);
+}
+
+.page-card {
+    width: min(680px, 90vw);
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 14px 30px rgba(31, 41, 55, 0.2);
+    text-align: center;
+}
+
+.hero-image {
+    width: min(300px, 70vw);
+    height: auto;
+    margin: 10px 0 6px;
+}
+
+a {
+    color: #1d4ed8;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+

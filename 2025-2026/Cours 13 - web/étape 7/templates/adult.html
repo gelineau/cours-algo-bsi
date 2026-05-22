@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adulte</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="adult-page">
+    <main class="page-card">
+        <h1>Tu as {{ age }} ans</h1>
+        <p>Tu es majeur.</p>
+        <img src="{{ url_for('static', filename='robot.svg') }}" alt="Robot souriant" class="hero-image">
+        <p><a href="{{ url_for('index_controller') }}">Retour à l'accueil</a></p>
+    </main>
+</body>
+</html>
+

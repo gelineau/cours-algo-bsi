@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Success</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="page-card">
+        <h1>Login réussi !</h1>
+        <p>Bienvenue <strong>{{ username }}</strong>.</p>
+        <p>Vous êtes maintenant connecté.</p>
+        <p><a href="{{ url_for('users_controller') }}">Voir la liste des utilisateurs</a></p>
+        <p><a href="{{ url_for('user_form_controller') }}">Aller au formulaire utilisateur</a></p>
+        <p><a href="{{ url_for('index_controller') }}">Retour à l'accueil</a></p>
+    </main>
+</body>
+</html>

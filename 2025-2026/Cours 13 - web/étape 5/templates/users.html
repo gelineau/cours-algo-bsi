@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Users</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="page-card">
+        <h1>Liste des utilisateurs</h1>
+        <table>
+        {% for user in users %}
+        <tr><td>{{ user }}</td></tr>
+        {% endfor %}
+        </table>
+        <p><a href="{{ url_for('user_form_controller') }}">Ajouter un utilisateur</a></p>
+        <p><a href="{{ url_for('index_controller') }}">Retour à l'accueil</a></p>
+    </main>
+</body>
+</html>
+

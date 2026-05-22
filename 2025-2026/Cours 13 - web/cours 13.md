@@ -37,7 +37,8 @@ http://localhost:5000
 Vous devriez voir une page HTML simple s'afficher !
 
 N.B. :
-- Flask s'exécute en **mode debug**, ce qui signifie que toute modification que vous faites au code sera automatiquement rechargée - il suffit de rafraîchir la page du navigateur.
+- Flask s'exécute en **mode debug**, ce qui signifie que toute modification que vous faites au code sera automatiquement 
+rechargée - il suffit de rafraîchir la page du navigateur.
 - Pour arrêter le serveur, appuyez sur **Ctrl+C** dans le terminal.
 
 ## 2. Étape 2 : deuxième page et CSS
@@ -69,7 +70,8 @@ body {
 
 ### 2.5. Référencer le fichier CSS dans `hello.html`
 
-Référencez ce fichier CSS dans le template `hello.html`. Pour cela, ajoutez la ligne suivante dans la section `<head>` de votre template :
+Référencez ce fichier CSS dans le template `hello.html`. Pour cela, ajoutez la ligne suivante dans 
+la section `<head>` de votre template :
 
 ```html
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Failed</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="page-card">
+        <h1>Login échoué !</h1>
+        <p>Identifiants invalides (username ou password incorrect).</p>
+        <p><a href="{{ url_for('login_controller') }}">Réessayer</a></p>
+        <p><a href="{{ url_for('index_controller') }}">Retour à l'accueil</a></p>
+    </main>
+</body>
+</html>
+
