@@ -1,0 +1,51 @@
+Types:
+______
+int, float, bool, None
+str, list, tuple, set, dict
+user defined class
+
+Basique :
+---------
+variable
+commentaire
+
+str
+----
+'' "" """"""
+
+a[23]
+a[3:4] a[:4]
+a[:-1]
+a[200] vs a[2:200]
+len()
+split()
+in
+startswith()
+addition et multiplication de strings
+
+f-strings
+
+
+changement de type
+==================
+
+
+list
+____
+comme str + append()
++ modif
+''.join
+
+
+
+
+function
+--------
+
+typage
+------
+
+
+for
+---
++ range
