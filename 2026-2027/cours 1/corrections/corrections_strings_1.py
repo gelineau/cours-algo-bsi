@@ -1,19 +1,6 @@
 from __future__ import annotations
 
 
-def get_character(sentence: str, index: int) -> str | None:
-    # Check if the index is out of range (positive or negative)
-    if index >= len(sentence) or index < -len(sentence):
-        return None
-    return sentence[index]
-
-
-print(get_character("Python", 2))  # t
-print(get_character("Python", -1))  # n
-print(get_character("Python", 10))  # None
-print(get_character("Python", -10))  # None
-
-
 def get_first_characters(sentence: str, number: int) -> str:
     # Slices never raise an IndexError, even if number > len(sentence)
     return sentence[:number]
